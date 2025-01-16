@@ -1,0 +1,204 @@
+/* Overall layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #f4f7f6; /* Soft, neutral background */
+}
+
+/* Video background */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Wrapper for login form and image */
+.login-wrapper {
+  display: flex;
+  width: 80%;
+  max-width: 900px;
+  height: 590px;
+  background-color: rgba(255, 255, 255, 0.85); /* Transparent background */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Darker shadow for strong feel */
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+/* Left side: Image and text */
+.image-container {
+  flex: 1;
+  background: url('../image1/log1.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.welcome-text h3 {
+  font-size: 28px; /* Slightly larger font for bold statement */
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.welcome-text p {
+  font-size: 18px; /* More masculine font size */
+  color: #f0f0f0;
+}
+
+/* Right side: Login form */
+.login-container {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.logo {
+  width: 100px; /* Adjusted for cleaner look */
+  height: auto;
+  margin-bottom: -20px;
+}
+
+h2 {
+  color: #2c3e50; /* Dark navy for a bold, masculine look */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  font-size: 14px;
+  color: #2c3e50;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f8f8f8;
+}
+
+/* Button styling */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #1f78b4; /* Masculine blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #155a8a; /* Darker blue on hover */
+}
+
+.options-container {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.psw a {
+  color: #1f78b4;
+  text-decoration: none;
+}
+
+.psw a:hover {
+  text-decoration: underline;
+}
+
+/* Social login */
+.social-login {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.social-login p {
+  color: #666;
+  font-size: 14px;
+}
+
+.google-btn {
+  background-color: #4285F4;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.google-btn:hover {
+  background-color: #357ae8;
+}
+
+/* Sign-up link */
+.signup {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.signup a {
+  color: #1f78b4;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+/* Cancel button */
+.cancelbtn {
+  background-color: #ddd;
+  color: #333;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancelbtn:hover {
+  background-color: #ccc;
+}

@@ -1,0 +1,141 @@
+/* Overall layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f7f6; /* Soft, neutral background */
+}
+
+.signup-wrapper {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    height: 560px;
+    background-color: #fff; /* White background for form */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Left side: Image and text */
+.image-container {
+    flex: 1;
+    background: url('../image/s1.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.welcome-text h3 {
+    font-size: 28px; /* Slightly larger font for impact */
+    color: #fff;
+    text-transform: uppercase; /* Uppercase for a strong look */
+}
+
+.welcome-text p {
+    font-size: 18px; /* Increased font size for readability */
+    color: #f0f0f0;
+}
+
+/* Right side: Signup form */
+.signup-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px; /* Adjusted for cleaner look */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #2c3e50; /* Dark navy for a bold appearance */
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase for professionalism */
+}
+
+.input-container {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+.input-container label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px; /* Increased padding for comfort */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f8f8f8; /* Light gray background for input */
+}
+
+/* Button styling */
+.register-btn {
+    width: 100%;
+    padding: 12px; /* Increased padding for a more substantial button */
+    background-color: #1f78b4; /* Masculine blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #155a8a; /* Darker blue on hover */
+}
+
+.options-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancelbtn {
+    background-color: #ddd;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancelbtn:hover {
+    background-color: #ccc;
+}
+
+/* Login link */
+.login a {
+    color: #1f78b4; /* Masculine blue for links */
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}

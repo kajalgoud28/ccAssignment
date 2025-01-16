@@ -1,0 +1,169 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Consistent font family */
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea; /* Neutral background for contrast */
+    color: #333;
+}
+
+.logo-img {
+    width: 120px; /* Consistent logo size */
+}
+
+/* Navigation Styling */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Increased gap for spacious look */
+}
+
+.main-nav ul li {
+    display: inline;
+}
+
+.main-nav ul li a {
+    color: #fff; /* Use white for better contrast */
+    text-decoration: none;
+    font-weight: 700; /* Bold text for emphasis */
+    font-size: 18px; /* Consistent font size */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px; /* Space for underline effect */
+}
+
+.main-nav ul li a:hover {
+    color: #ffe0f0; /* Light color on hover */
+    border-bottom: 2px solid #ff65a3; /* Underline effect */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Consistent gap */
+}
+
+.search-form input {
+    padding: 8px; /* Padding for usability */
+    border-radius: 5px;
+    border: 2px solid #333; /* Darker border for contrast */
+    transition: border 0.3s ease;
+}
+
+.search-form input:focus {
+    border-color: #ff65a3; /* Change border color on focus */
+}
+h2.section-title {
+    font-size: 36px;
+    color: #3f0faf; /* Retain this blue color for consistency */
+    margin-bottom: 40px;
+    font-weight: bold; /* Bold title for emphasis */
+}
+
+.search-form button {
+    background-color: #ff65a3; /* Accent color */
+    color: white;
+    border: none;
+    padding: 8px 15px; /* Increased padding */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold; /* Bolder button text */
+}
+
+.login-icon {
+    color: white; /* White for contrast */
+    font-size: 1.5em; /* Consistent icon size */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../image1/fac3.jpg'); /* Ensure image reflects services */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px; /* Padding for better text spacing */
+}
+
+.hero-content h2 {
+    font-size: 52px; /* Prominent title size */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Dark shadow for contrast */
+}
+
+.hero-content p {
+    font-size: 22px; /* Consistent paragraph size */
+    font-weight: 300;
+    max-width: 800px; /* For better readability */
+}
+
+/* Services Section */
+.services-container {
+    padding: 60px 20px;
+    background-color: #fdf9fc; /* Light background for contrast */
+    text-align: center;
+}
+
+.section-title {
+    font-size: 40px; /* Consistent title size */
+    color: #ff65a3; /* Accent color */
+    margin-bottom: 40px;
+    font-weight: bold; /* Bold title */
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Fixed 3 columns for uniformity */
+    gap: 30px; /* Space between cards */
+}
+
+.service-card {
+    background-color: white; /* Consistent card background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img {
+    width: 100%; /* Fill card width */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.service-card:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.service-info {
+    padding: 20px; /* Padding for content */
+}
+
+.service-info h3 {
+    font-size: 24px; /* Consistent heading size */
+    color: #333; /* Darker text for visibility */
+    margin-bottom: 10px;
+    font-weight: bold; /* Bold text for service names */
+}
+
+.service-info p {
+    font-size: 16px; /* Consistent paragraph size */
+    color: #666; /* Darker gray for better contrast */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark footer for strong finish */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px; /* Smaller footer text */
+}

@@ -1,0 +1,93 @@
+/* Overall page styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; /* Prevent scrollbars from appearing */
+    height: 100vh;
+}
+
+/* Video background */
+.video-background {
+    position: fixed; /* Fix the video in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Hide any overflow */
+    z-index: -1; /* Ensure the video is behind other content */
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire area */
+}
+
+/* Login container styles */
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the form */
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1; /* Ensure the form is above the video */
+    text-align: center;
+}
+
+/* Header styling */
+h2 {
+    margin-bottom: 20px;
+    color: #2c3e50; /* Dark navy for a strong appearance */
+    font-weight: bold; /* Bold for emphasis */
+    text-transform: uppercase; /* Uppercase for a strong look */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 500; /* Medium weight for a masculine look */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px; /* Increased padding for comfort */
+    border: 1px solid #ccc; /* Lighter border for a cleaner look */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px; /* Slightly larger font for readability */
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px; /* Increased padding for a more substantial button */
+    background-color: #1f78b4; /* Masculine blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #155a8a; /* Darker blue on hover */
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    margin-top: 15px;
+}

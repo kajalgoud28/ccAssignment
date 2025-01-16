@@ -1,0 +1,153 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea; /* Subtle gray for a masculine look */
+    color: #333;
+}
+
+/* Header */
+.logo-img {
+    width: 120px; /* Slightly larger logo */
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Increased gap for a more spacious look */
+}
+
+.main-nav ul li {
+    display: inline;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700; /* Bolder text for emphasis */
+    font-size: 18px; /* Slightly larger font size */
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #ffe0f0; /* Maintain hover color */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-form input {
+    padding: 8px; /* Increased padding for better usability */
+    border-radius: 5px;
+    border: 2px solid #333; /* Darker border for contrast */
+}
+
+.search-form button {
+    background-color: #333; /* Dark background for button */
+    color: white;
+    border: none;
+    padding: 8px 12px; /* Increased padding for a better look */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold; /* Bold text */
+}
+
+.login-form a i {
+    color: white;
+    font-size: 1.5em;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../image1/shav2.jpg'); /* Ensure this is a strong, masculine image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Slightly darker shadow for readability */
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 700px;
+}
+
+/* Services Section */
+.services-container {
+    padding: 60px 20px;
+    background-color: #fdf9fc; /* Light background for contrast */
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #3f0faf; /* Retain this blue color for consistency */
+    margin-bottom: 40px;
+    font-weight: bold; /* Bold title for emphasis */
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+    gap: 30px; /* Space between cards */
+    padding: 0 20px; /* Optional padding for the container */
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Ensure each card takes full width of grid item */
+    width: 100%;
+}
+
+.service-card img {
+    width: 100%; /* Ensure images fill the card */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+.service-card:hover {
+    transform: scale(1.02); /* Subtle hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.service-info {
+    padding: 20px;
+}
+
+.service-info h3 {
+    font-size: 22px;
+    color: #333; /* Darker color for text */
+    margin-bottom: 10px;
+    font-weight: bold; /* Bold text for service names */
+}
+
+.service-info p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark footer for a strong finish */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,101 @@
+body {
+    background-image: url('../image/bgg1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    margin: 0;
+    
+}
+body header h1{
+    
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5cm 2cm; /* Reduced vertical padding from 20px to 10px */
+    width: 100%;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.452); 
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+.product {
+    background: rgba(255, 255, 255, 0.966); 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(25% - 40px);
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+.purchase-all-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.purchase-all-button:hover {
+    background-color: #c0392b;
+}
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.product .product-image img {
+    width: 200px; /* Set desired width */
+    height: 200px; /* Set desired height */    
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+.product:hover .product-image img {
+    transform: scale(1.1);
+}
+.product h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.product p {
+    color: #555;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+.product .price {
+    color: #e74c3c;
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+    .product {
+        width: calc(50% - 40px);
+    }
+}
+@media screen and (max-width: 480px) {
+    .product {
+        width: calc(100% - 40px);
+    }
+}
