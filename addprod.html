@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Product</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #f76c6c;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"], input[type="number"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #f76c6c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f44336;
+        }
+
+        .success-message {
+            color: green;
+            text-align: center;
+        }
+
+        .error-message {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Add New Product</h2>
+
+    <!-- Success or Error Messages -->
+    <?php if (isset($message)) { ?>
+        <p class="<?php echo $message_type; ?>"><?php echo $message; ?></p>
+    <?php } ?>
+
+    <form action="php/addprod.php" method="POST" enctype="multipart/form-data">
+        <label for="prod_name">Product Name</label>
+        <input type="text" id="prod_name" name="prod_name" required>
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="5" required></textarea>
+
+        <label for="price">Price</label>
+        <input type="number" id="price" name="price" step="0.01" required>
+
+        <label for="image">Product Image</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+
+        <input type="submit" value="Add Product">
+    </form>
+</div>
+
+</body>
+</html>

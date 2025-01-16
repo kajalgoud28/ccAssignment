@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massage Services - Salon Elegance for Men</title>
+    <link rel="stylesheet" href="./css/massage.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="image/logo.png" alt="Salon Elegance logo" class="logo-img">
+            </div>
+            <nav class="main-nav">
+                <div class="salon-info">
+                    <h1 class="salon-title">Elegance</h1>
+                    <h2 class="salon-subtitle">Men's Grooming & Wellness</h2>
+                </div>
+                <ul>
+                    <li class="<?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>"><a href="index.php">Home</a></li>
+                    <li><a href="index.php#services">Services</a></li>
+                    <li><a href="index.php#about">About Us</a></li>
+                    <li><a href="php/contact.php">Contact</a></li>
+                    <li><a href="php/products.php">Products</a></li>
+                    <li><a href="./php/cart.php">Cart</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <form action="php/search.php" method="GET" class="search-form">
+                    <input type="text" name="query" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+                <div class="login-form">
+                    <a href="login.html"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Massage Therapy for Men</h2>
+            <p>Recharge with our specialized massage treatments designed to relieve stress, enhance performance, and promote recovery.</p>
+        </div>
+    </section>
+    
+    <section class="services-container">
+        <h2 class="section-title">Our Premium Massages</h2>
+        <div class="service-grid">
+            <!-- Service Card 1 -->
+            <div class="service-card">
+                <img src="./image1/massage1-men.jpg" alt="Deep Tissue Massage">
+                <div class="service-info">
+                    <h3>Deep Tissue Massage</h3>
+                    <p>Perfect for active men, this massage targets deeper layers of muscles to relieve chronic tension and improve flexibility.</p>
+                </div>
+            </div>
+            <!-- Service Card 2 -->
+            <div class="service-card">
+                <img src="./image1/massage2-men.jpg" alt="Sports Recovery Massage">
+                <div class="service-info">
+                    <h3>Sports Recovery Massage</h3>
+                    <p>Optimize your athletic performance and prevent injury with a massage designed to enhance muscle recovery.</p>
+                </div>
+            </div>
+            <!-- Service Card 3 -->
+            <div class="service-card">
+                <img src="./image1/massage3-men.jpg" alt="Hot Stone Therapy">
+                <div class="service-info">
+                    <h3>Hot Stone Therapy</h3>
+                    <p>Unwind with heated stones that melt away muscle tension, leaving you feeling balanced and renewed.</p>
+                </div>
+            </div>
+            <!-- Service Card 4 -->
+            <div class="service-card">
+                <img src="./image1/massage4-men.jpg" alt="Thai Stretching Massage">
+                <div class="service-info">
+                    <h3>Thai Stretching Massage</h3>
+                    <p>Combining stretching and acupressure, this massage helps improve flexibility and mobility for an active lifestyle.</p>
+                </div>
+            </div>
+            <!-- Service Card 5 -->
+            <div class="service-card">
+                <img src="./image1/massage5-men.jpg" alt="Trigger Point Therapy">
+                <div class="service-info">
+                    <h3>Trigger Point Therapy</h3>
+                    <p>Target specific areas of tension to relieve chronic pain, improve range of motion, and enhance muscle function.</p>
+                </div>
+            </div>
+            <!-- Service Card 6 -->
+            <div class="service-card">
+                <img src="./image1/massage6-men.jpg" alt="Relaxation Massage">
+                <div class="service-info">
+                    <h3>Relaxation Massage</h3>
+                    <p>Recharge your body and mind with a soothing massage designed to reduce stress and promote relaxation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Salon Elegance for Men. Strengthen Your Body, Recharge Your Mind.</p>
+    </footer>
+</body>
+</html>

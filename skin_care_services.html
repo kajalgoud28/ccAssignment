@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Care Services for Men - Salon Elegance</title>
+    <link rel="stylesheet" href="./css/skin_care_services.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="image/logo.png" alt="Salon Elegance logo" class="logo-img">
+            </div>
+            <nav class="main-nav">
+                <div class="salon-info">
+                    <h1 class="salon-title">Elegance</h1>
+                    <h2 class="salon-subtitle">Men's Grooming and Skin Care</h2>
+                </div>
+                <ul>
+                    <li class="<?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>"><a href="index.php">Home</a></li>
+                    <li><a href="index.php#services">Services</a></li>
+                    <li><a href="index.php#about">About Us</a></li>
+                    <li><a href="php/contact.php">Contact</a></li>
+                    <li><a href="php/products.php">Products</a></li>
+                    <li><a href="./php/cart.php">Cart</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <form action="php/search.php" method="GET" class="search-form">
+                    <input type="text" name="query" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+                <div class="login-form">
+                    <a href="login.html"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Revitalize Your Skin</h2>
+            <p>Our expert skincare treatments are tailored specifically for men, ensuring your skin stays fresh, healthy, and glowing.</p>
+        </div>
+    </section>
+
+    <section class="services-container">
+        <h2 class="section-title">Premium Men's Skin Care Services</h2>
+        <div class="service-grid">
+            <!-- Service Card 1 -->
+            <div class="service-card">
+                <img src="./image1/skin1.jpg" alt="Deep Cleansing Facial">
+                <div class="service-info">
+                    <h3>Deep Cleansing Facial</h3>
+                    <p>This treatment is designed to deeply cleanse pores, remove impurities, and hydrate your skin, leaving it refreshed and rejuvenated.</p>
+                </div>
+            </div>
+            <!-- Service Card 2 -->
+            <div class="service-card">
+                <img src="./image1/skinn2.jpg" alt="Anti-Aging Treatment">
+                <div class="service-info">
+                    <h3>Anti-Aging Treatment</h3>
+                    <p>Our anti-aging treatment uses advanced techniques and products to reduce the appearance of fine lines and wrinkles for a youthful glow.</p>
+                </div>
+            </div>
+            <!-- Service Card 3 -->
+            <div class="service-card">
+                <img src="./image1/skin3.jpg" alt="Hydrating Skin Therapy">
+                <div class="service-info">
+                    <h3>Hydrating Skin Therapy</h3>
+                    <p>This treatment replenishes lost moisture, perfect for dry or irritated skin, providing immediate relief and long-lasting hydration.</p>
+                </div>
+            </div>
+            <!-- Service Card 4 -->
+            <div class="service-card">
+                <img src="./image1/skin4.jpg" alt="Acne Treatment">
+                <div class="service-info">
+                    <h3>Acne Treatment</h3>
+                    <p>Target and treat acne with our specialized acne control therapy, designed to clear your skin and prevent future breakouts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Salon Elegance. Men's Grooming, Redefined.</p>
+    </footer>
+</body>
+</html>

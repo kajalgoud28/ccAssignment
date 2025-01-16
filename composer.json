@@ -1,0 +1,7 @@
+{
+    "require": {
+        "google/apiclient": "^2.14",
+        "facebook/graph-sdk": "^5.7",
+        "mongodb/mongodb": "^1.5"
+    }
+}

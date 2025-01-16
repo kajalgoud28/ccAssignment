@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Salon Elegance</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="image/adbg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="signup-wrapper">
+        <!-- Left section with image and text -->
+        <div class="image-container">
+            <div class="welcome-text">
+                <h3>Join Salon Elegance</h3>
+                <p>Your journey to beauty begins here. Register to book your appointments easily.</p>
+            </div>
+        </div>
+
+        <!-- Right section with signup form -->
+        <div class="signup-container">
+            <form action="./php/signup.php" method="post" class="signup-form">
+                <!-- Logo and welcome message -->
+                <div class="logo-container">
+                    <img src="image/logo.png" alt="Salon Elegance Logo" class="logo">
+                    <h2>Create your account</h2>
+                </div>
+                
+                <!-- Input fields for username and password -->
+                <div class="input-container">
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" id="email" placeholder="Enter Email" name="email" required>
+                </div>
+                
+                <div class="input-container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" id="uname" placeholder="Enter Username" name="uname" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+                </div>
+
+                <!-- Register button -->
+                <button type="submit" class="register-btn">Register</button>
+
+                <!-- Options and links -->
+                <div class="options-container">
+                    <button type="button" class="cancelbtn"><a href="login.html">Cancel</a></button>
+                    <span class="login">Already have an account? <a href="login.html">Back to login page</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

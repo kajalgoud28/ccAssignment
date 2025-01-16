@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Salon Elegance</title>
+    <link rel="stylesheet" href="./css/header.css"> 
+    <link rel="stylesheet" href="./css/about.css">  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="./image/logo.png" alt="Salon Elegance logo" class="logo-img">
+            </div>
+            <nav class="main-nav">
+                <div class="salon-info">
+                    <h1 class="salon-title">Elegance</h1>
+                    <h2 class="salon-subtitle">Men's Grooming & Style</h2>
+                </div>
+                <ul>
+                    <li class="<?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>"><a href="index.php">Home</a></li>
+                    <li><a href="index.php#services">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="php/contact.php">Contact</a></li>
+                    <li><a href="php/products.php">Products</a></li>
+                    <li><a href="./php/cart.php">Cart</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <form action="php/search.php" method="GET" class="search-form">
+                    <input type="text" name="query" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fas fa-user"></i>
+                        <?php if (isset($_SESSION['username'])): ?>
+                        <?php echo htmlspecialchars($_SESSION['username']); ?>
+                        <?php else: ?>
+                        Account
+                        <?php endif; ?>
+                    </button>
+                    <div class="dropdown-content">
+                        <?php if (isset($_SESSION['username'])): ?>
+                        <p><?php echo htmlspecialchars($_SESSION['username']); ?></p>
+                        <p><?php echo isset($_SESSION['email']) ? htmlspecialchars($_SESSION['email']) : 'Not provided'; ?></p>
+                        <a href="php/logout.php">Logout</a>
+                        <?php else: ?>
+                        <a href="login.html">Login</a>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero-section">
+        <div class="hero-text">
+            <h1>Unleash Your Style</h1>
+            <p>Welcome to Salon Elegance. Perfect grooming for the modern man.</p>
+            <a href="index.php#services" class="btn">Explore Services</a>
+        </div>
+        <div class="hero-image">
+            <img src="./image1/ab1.jpg" alt="Male Model at Salon Elegance">
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-details">
+        <div class="about-container">
+            <div class="about-info">
+                <h2>Welcome to Our Studio</h2>
+                <p>Founded in 2000, Salon Elegance has become a leading men's grooming destination. From haircuts to beard grooming, we cater to the modern man.</p>
+            </div>
+            <div class="about-values">
+                <div class="value-item">
+                    <i class="fas fa-cut"></i>
+                    <h3>Precision Haircuts</h3>
+                    <p>Our expert stylists provide sharp, tailored haircuts to suit your style.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-beard"></i>
+                    <h3>Beard Grooming</h3>
+                    <p>We offer the best in beard grooming, from trimming to shaping.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Skin Care</h3>
+                    <p>Using the finest products, we ensure your skin looks fresh and healthy.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Online Booking</h3>
+                    <p>Book your next appointment with ease through our online system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Salon Elegance. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Services - Salon Elegance</title>
+    <link rel="stylesheet" href="./css/makeup.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="image/logo.png" alt="Salon Elegance logo" class="logo-img">
+            </div>
+            <nav class="main-nav">
+                <div class="salon-info">
+                    <h1 class="salon-title">Elegance</h1>
+                    <h2 class="salon-subtitle">Hair and Beauty Salon</h2>
+                </div>
+                <ul>
+                    <li class="<?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>"><a href="index.php">Home</a></li>
+                    <li><a href="index.php#services">Services</a></li>
+                    <li><a href="index.php#about">About Us</a></li>
+                    <li><a href="php/contact.php">Contact</a></li>
+                    <li><a href="php/products.php">Products</a></li>
+                    <li><a href="./php/cart.php">Cart</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <form action="./php/search.php" method="GET" class="search-form">
+                    <input type="text" name="query" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+                <div class="login-form">
+                    <a href="login.html"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Glamorous Makeup Services</h2>
+            <p>Look your best for any occasion with our professional makeup services, tailored to suit your style and personality.</p>
+        </div>
+    </section>
+    
+    <section class="services-container">
+        <h2 class="section-title">Our Signature Makeup Services</h2>
+        <div class="service-grid">
+            <!-- Service Card 1 -->
+            <div class="service-card">
+                <img src="./image/makeup1.jpg" alt="Bridal Makeup">
+                <div class="service-info">
+                    <h3>Bridal Makeup</h3>
+                    <p>Feel like a queen on your special day with our flawless bridal makeup that enhances your natural beauty.</p>
+                </div>
+            </div>
+            <!-- Service Card 2 -->
+            <div class="service-card">
+                <img src="./image/makeup2.png" alt="Party Makeup">
+                <div class="service-info">
+                    <h3>Party Makeup</h3>
+                    <p>Get a glamorous look for any event with our stunning party makeup, perfect for any celebration or night out.</p>
+                </div>
+            </div>
+            <!-- Service Card 3 -->
+            <div class="service-card">
+                <img src="./image/makeup3.jpg" alt="Smokey Eye Makeup">
+                <div class="service-info">
+                    <h3>Smokey Eye Makeup</h3>
+                    <p>Achieve a bold and dramatic look with our perfectly blended smokey eye makeup, ideal for a chic evening.</p>
+                </div>
+            </div>
+            <!-- Service Card 4 -->
+            <div class="service-card">
+                <img src="./image/makeup4.jpg" alt="Airbrush Makeup">
+                <div class="service-info">
+                    <h3>Airbrush Makeup</h3>
+                    <p>Enjoy a flawless, long-lasting finish with our airbrush makeup technique, giving you a picture-perfect glow.</p>
+                </div>
+            </div>
+            <!-- Service Card 5 -->
+            <div class="service-card">
+                <img src="./image/makeup5.avif" alt="Natural Makeup">
+                <div class="service-info">
+                    <h3>Natural Makeup</h3>
+                    <p>Enhance your features with our subtle and natural makeup look, perfect for daytime events or a soft, polished appearance.</p>
+                </div>
+            </div>
+            <!-- Service Card 6 -->
+            <div class="service-card">
+                <img src="./image/makeup6.jpg" alt="Glam Makeup">
+                <div class="service-info">
+                    <h3>Glam Makeup</h3>
+                    <p>Transform into a glamorous diva with our high-gloss, high-impact makeup look that turns heads wherever you go.</p>
+                </div>
+            </div>
+            <!-- Service Card 7 -->
+            <div class="service-card">
+                <img src="./image/makeup7.jpg" alt="HD Makeup">
+                <div class="service-info">
+                    <h3>HD Makeup</h3>
+                    <p>Get ready for the camera with our HD makeup service, which offers a smooth, flawless finish ideal for photo shoots and events.</p>
+                </div>
+            </div>
+            <!-- Service Card 8 -->
+            <div class="service-card">
+                <img src="./image/makeup8.jpg" alt="Editorial Makeup">
+                <div class="service-info">
+                    <h3>Editorial Makeup</h3>
+                    <p>Bring your creative vision to life with our avant-garde and editorial makeup services, perfect for fashion shoots and shows.</p>
+                </div>
+            </div>
+            <!-- Service Card 9 -->
+            <div class="service-card">
+                <img src="./image/makeup9.jpg" alt="Theatrical Makeup">
+                <div class="service-info">
+                    <h3>Theatrical Makeup</h3>
+                    <p>Step into character with our theatrical makeup service, designed for stage performers and actors needing dramatic transformation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Salon Elegance. Beauty That Transforms You.</p>
+    </footer>
+</body>
+</html>

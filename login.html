@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Salon Elegance</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Video Background -->
+     <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="image/cherry_blossom2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="login-wrapper">
+        <!-- Left section with image and text -->
+        <div class="image-container">
+            <div class="welcome-text">
+                <h3>Welcome to Salon Elegance</h3>
+                <p>Your beauty is our priority. Enjoy luxurious salon services with us.</p>
+            </div>
+        </div>
+        <div class="login-container">
+            <form action="./php/login.php" method="post" class="login-form">
+                <!-- Logo and welcome message -->
+                <div class="logo-container">
+                    <img src="image/logo.png" alt="Salon Elegance Logo" class="logo">
+                    <h2>Sign in to your account</h2>
+                </div>
+                <div class="input-container">
+                    <label for="uname"><b>name </b></label>
+                    <input type="text" id="uname" placeholder="Enter username " name="uname" required>
+                </div>
+                <div class="input-container">
+                    <label for="uname"><b>Email </b></label>
+                    <input type="email" id="uemail" placeholder="Enter Email " name="uemail" required>
+                </div>
+                <div class="input-container">
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+                </div>
+                
+                <button type="submit" class="login-btn">Sign In</button>
+
+                <!-- Signup link -->
+                <div class="signup-link">
+                    <p>New to Salon Elegance? <a href="signup.html">Create an account</a></p>
+                </div>
+            </form>
+            <button type="button" class="cancelbtn"><a href="index.php">Cancel</a></button>
+            <p>Admin? <a href="adminlogin.php">Click Here!!</a></p>
+        </div>
+    </div>
+</body>
+</html>

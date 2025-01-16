@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaving Experience - Salon Elegance for Men</title>
+    <link rel="stylesheet" href="./css/shaving_experience.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="image/logo.png" alt="Salon Elegance logo" class="logo-img">
+            </div>
+            <nav class="main-nav">
+                <div class="salon-info">
+                    <h1 class="salon-title">Elegance</h1>
+                    <h2 class="salon-subtitle">Men's Grooming & Wellness</h2>
+                </div>
+                <ul>
+                    <li class="<?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>"><a href="index.php">Home</a></li>
+                    <li><a href="index.php#services">Services</a></li>
+                    <li><a href="index.php#about">About Us</a></li>
+                    <li><a href="php/contact.php">Contact</a></li>
+                    <li><a href="php/products.php">Products</a></li>
+                    <li><a href="./php/cart.php">Cart</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <form action="php/search.php" method="GET" class="search-form">
+                    <input type="text" name="query" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+                <div class="login-form">
+                    <a href="login.html"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Ultimate Shaving Experience</h2>
+            <p>Discover professional shaving services crafted for the modern man, combining precision, comfort, and style.</p>
+        </div>
+    </section>
+    
+    <section class="services-container">
+        <h2 class="section-title">Our Shaving Services</h2>
+        <div class="service-grid">
+            <!-- Service Card 1 -->
+            <div class="service-card">
+                <img src="./image1/shaving1-men.jpg" alt="Classic Shave">
+                <div class="service-info">
+                    <h3>Classic Shave</h3>
+                    <p>Enjoy a traditional wet shave with hot towels and premium products for the closest, smoothest finish.</p>
+                </div>
+            </div>
+            <!-- Service Card 2 -->
+            <div class="service-card">
+                <img src="./image1/shaving2-men.jpg" alt="Beard Sculpting">
+                <div class="service-info">
+                    <h3>Beard Sculpting</h3>
+                    <p>Achieve a perfectly groomed beard with expert trimming, shaping, and precision lines tailored to your style.</p>
+                </div>
+            </div>
+            <!-- Service Card 3 -->
+            <div class="service-card">
+                <img src="./image1/shaving3-men.jpg" alt="Luxury Shave">
+                <div class="service-info">
+                    <h3>Luxury Shave</h3>
+                    <p>Pamper yourself with a luxury shave featuring premium oils, balms, and a relaxing face massage for a fresh, refined look.</p>
+                </div>
+            </div>
+            <!-- Service Card 4 -->
+            <div class="service-card">
+                <img src="./image1/shaving4-men.jpg" alt="Straight Razor Shave">
+                <div class="service-info">
+                    <h3>Straight Razor Shave</h3>
+                    <p>For the ultimate shaving experience, our expert barbers use a straight razor to deliver a clean, precise shave.</p>
+                </div>
+            </div>
+            <!-- Service Card 5 -->
+            <div class="service-card">
+                <img src="./image1/shaving5-men.jpg" alt="Head Shave">
+                <div class="service-info">
+                    <h3>Head Shave</h3>
+                    <p>Get the perfect bald look with a smooth, polished head shave using our top-quality razors and shaving products.</p>
+                </div>
+            </div>
+            <!-- Service Card 6 -->
+            <div class="service-card">
+                <img src="./image1/shaving6-men.jpg" alt="Skin Care and Shave Combo">
+                <div class="service-info">
+                    <h3>Skin Care & Shave Combo</h3>
+                    <p>Combine your shaving service with a rejuvenating skin care treatment to leave your face refreshed and radiant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Salon Elegance for Men. Look Sharp, Feel Confident.</p>
+    </footer>
+</body>
+</html>
